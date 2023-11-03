@@ -46,23 +46,12 @@ const About = () => {
 							<p>
 								In addition to my passion for web development, I
 								have also dabbled in the fascinating realm of
-								Artificial Intelligence and Machine Learning.
-								While my experience in this field is relatively
-								limited compared to my web development
-								expertise, I am continually expanding my
-								knowledge in AI and ML, driven by a desire to
-								understand how these technologies can shape the
-								future.
-							</p>
-							<p>
-								Outside of the classroom, I actively seek
-								opportunities to apply my skills to real-world
-								projects and collaborate with like-minded
-								individuals. Whether it's contributing to
-								open-source initiatives, participating in
-								hackathons, or working on personal projects, I
-								am committed to honing my skills and staying at
-								the forefront of technological advancements.
+								Web3 and Blockchain development. While my
+								experience in this field is relatively limited
+								compared to my web development expertise, I am
+								continually expanding my knowledge in Web3,
+								driven by a desire to understand how these
+								technologies can shape the future.
 							</p>
 							<p>
 								As I embark on my journey as a tech enthusiast
@@ -72,7 +61,7 @@ const About = () => {
 								enthusiasts, mentors, and potential
 								collaborators. If you share my passion for
 								technology or are interested in exploring the
-								world of web development, AI, or ML, please feel
+								world of web development, or Web3, please feel
 								free to reach out. Let's connect and create
 								something extraordinary together!
 							</p>

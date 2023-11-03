@@ -48,10 +48,10 @@ const Hero = () => {
 					</div>
 					{/* actions */}
 					<div className="flex gap-2 text-4xl">
-						<a href="#">
+						<a href="https://www.linkedin.com/in/gokul-bansal-553429225/">
 							<AiFillLinkedin />
 						</a>
-						<a href="#">
+						<a href="https://github.com/bansalgokul">
 							<AiFillGithub />
 						</a>
 					</div>

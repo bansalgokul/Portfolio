@@ -14,7 +14,11 @@ const Experience = () => {
 				</div>
 				<div className="flex flex-col md:flex-row gap-4 md:gap-12 bg-white dark:bg-gray-950 max-w-[900px] mx-auto p-8 rounded-xl drop-shadow-md shadow-gray-900">
 					{/* <div>Nethues Technologies Pvt Ltd</div> */}
-					<img src={nethues} alt="" className="h-[30px] w-[100px]" />
+					<img
+						src={nethues}
+						alt=""
+						className="h-[30px] w-[100px] dark:invert"
+					/>
 					<div className="md:order-1">June 2023 - July 2023</div>
 					<div className="max-w-[400px]">
 						<div className="font-semibold text-gray-900 dark:text-gray-100 text-xl">

@@ -1,4 +1,5 @@
 import blogem from "../../assets/blogem.png";
+import logShikayat from "../../assets/logShikayat.jpg";
 import WorkItem from "./WorkItem";
 
 const works = [
@@ -10,11 +11,19 @@ const works = [
 		technologies: [
 			"React",
 			"Node.js",
-			"Express",
 			"MongoDB",
 			"Express.js",
 			"Tailwindcss",
 		],
+		link: "https://blog-em.vercel.app/",
+	},
+	{
+		title: "LokShikayat",
+		description:
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minima asperiores fugit illo pariatur doloremque sequi temporibus placeat eveniet cumque officia excepturi consequuntur voluptas modi, similique id qui ducimus accusamus!",
+		image: logShikayat,
+		technologies: ["React", "Tailwindcss"],
+		link: "",
 	},
 ];
 

@@ -1,9 +1,22 @@
+import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BiCopy } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 
 const Contact = () => {
+	const [emailCopied, setEmailCopied] = useState(false);
+	const [phoneCopied, setPhoneCopied] = useState(false);
+
+	const copyToClipboard = (text: string) => {
+		const textArea = document.createElement("textarea");
+		textArea.value = text;
+		document.body.appendChild(textArea);
+		textArea.select();
+		document.execCommand("copy");
+		document.body.removeChild(textArea);
+	};
+
 	return (
 		<div id="contact" className="bg-gray-50 dark:bg-gray-900 px-4 py-16">
 			<div className="flex flex-col gap-4 md:gap-12 max-w-[1280px] mx-auto  ">
@@ -27,9 +40,20 @@ const Contact = () => {
 							<span className="text-gray-900 dark:text-gray-100">
 								bansalgokul134@gmail.com
 							</span>
-							<button>
+							<button
+								onClick={() => {
+									copyToClipboard("bansalgokul134@gmail.com");
+									setEmailCopied(true);
+									setPhoneCopied(false);
+								}}
+							>
 								<BiCopy />
 							</button>
+							{emailCopied && (
+								<span className="text-green-600 text-base">
+									Copied!
+								</span>
+							)}
 						</div>
 						<div className="flex gap-1 md:gap-4 justify-center items-center">
 							<div>
@@ -38,9 +62,20 @@ const Contact = () => {
 							<span className="text-gray-900 dark:text-gray-100">
 								+91-8689054520
 							</span>
-							<button>
+							<button
+								onClick={() => {
+									copyToClipboard("+91-8689054520");
+									setPhoneCopied(true);
+									setEmailCopied(false);
+								}}
+							>
 								<BiCopy />
 							</button>
+							{phoneCopied && (
+								<span className="text-green-600 text-base">
+									Copied!
+								</span>
+							)}
 						</div>
 					</div>
 					<div className="flex flex-col gap-1 ">
@@ -48,10 +83,10 @@ const Contact = () => {
 							You may also find me on these platforms
 						</div>
 						<div className="flex gap-2 text-3xl justify-center">
-							<a href="#">
+							<a href="https://www.linkedin.com/in/gokul-bansal-553429225/">
 								<AiFillLinkedin />
 							</a>
-							<a href="#">
+							<a href="https://github.com/bansalgokul">
 								<AiFillGithub />
 							</a>
 						</div>

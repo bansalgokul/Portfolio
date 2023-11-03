@@ -1,10 +1,11 @@
 import { BiLinkExternal } from "react-icons/bi";
-
 type workItem = {
 	title: string;
 	description: string;
 	image: string;
 	technologies: string[];
+	link: string;
+	invert?: boolean;
 };
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 const WorkItem = ({ workItem }: Props) => {
 	return (
 		<div className="flex flex-col md:flex-row bg-white dark:bg-gray-950 w-full max-w-[1152px] mx-auto rounded-xl overflow-clip drop-shadow-lg shadow-gray-900 dark:shadow-gray-50">
-			<div className="grid place-content-center md:w-1/2 md:min-h-[480px] md:h-full p-6 md:p-12   bg-gray-50 dark:bg-gray-900">
+			<div className="grid place-content-center md:w-1/2 md:min-h-[480px] md:h-full p-4 md:p-8   bg-gray-50 dark:bg-gray-900">
 				<img
 					src={workItem.image}
 					alt=""
@@ -36,9 +37,11 @@ const WorkItem = ({ workItem }: Props) => {
 						</div>
 					))}
 				</div>
-				<button className="text-2xl">
-					<BiLinkExternal />
-				</button>
+				{workItem.link && (
+					<a href={workItem.link} className="text-2xl">
+						<BiLinkExternal />
+					</a>
+				)}
 			</div>
 		</div>
 	);

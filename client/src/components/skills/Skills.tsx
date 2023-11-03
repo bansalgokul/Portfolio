@@ -29,6 +29,7 @@ const skills = [
 	{
 		icon: expressIcon,
 		name: "Express.js",
+		invert: true,
 	},
 	{
 		icon: mongoIcon,
@@ -61,8 +62,13 @@ const Skills = () => {
 					</span>
 				</div>
 				<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-12 ">
-					{skills.map(({ icon, name }) => (
-						<SkillItem key={name} icon={icon} name={name} />
+					{skills.map(({ icon, name, invert }) => (
+						<SkillItem
+							key={name}
+							icon={icon}
+							name={name}
+							invert={invert}
+						/>
 					))}
 				</div>
 			</div>
