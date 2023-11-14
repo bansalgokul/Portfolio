@@ -1,12 +1,12 @@
-import blogem from "../../assets/blogem.png";
-import logShikayat from "../../assets/logShikayat.jpg";
-import WorkItem from "./WorkItem";
+import blogem from "../../assets/blogem.png"
+import logShikayat from "../../assets/logShikayat.jpg"
+import WorkItem from "./WorkItem"
 
 const works = [
 	{
 		title: "Blogem",
 		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minima asperiores fugit illo pariatur doloremque sequi temporibus placeat eveniet cumque officia excepturi consequuntur voluptas modi, similique id qui ducimus accusamus!",
+			"A blog website developed for solidifying my fundamentals in full stack web development. Anybody can signup and login and read or write blogs. Ensured Responsiveness and secure authentication and authorization.",
 		image: blogem,
 		technologies: [
 			"React",
@@ -20,12 +20,12 @@ const works = [
 	{
 		title: "LokShikayat",
 		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minima asperiores fugit illo pariatur doloremque sequi temporibus placeat eveniet cumque officia excepturi consequuntur voluptas modi, similique id qui ducimus accusamus!",
+			"Developed as a prototype for project participating in SIH23. Portal for users to easily register their complaints using a AI powered chatbot. Impressive design but currently chatbot is not working due to Google changing policies.",
 		image: logShikayat,
 		technologies: ["React", "Tailwindcss"],
 		link: "",
 	},
-];
+]
 
 const Work = () => {
 	return (
@@ -43,7 +43,7 @@ const Work = () => {
 				))}
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Work;
+export default Work

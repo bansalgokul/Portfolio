@@ -1,4 +1,4 @@
-import nethues from "../../assets/nethues-logo.webp";
+import nethues from "../../assets/nethues-logo.webp"
 
 const Experience = () => {
 	return (
@@ -27,14 +27,15 @@ const Experience = () => {
 						<div className="">
 							<ul className="list-disc pl-4 ">
 								<li>
-									Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Modi, velit?
+									Developed a user-friendly interface for an
+									employee management system using React.js,
+									enabling seamless navigation and interaction
+									for efficient task handling.
 								</li>
-								<li>Lorem ipsum dolor sit amet.</li>
 								<li>
-									Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Quis corrupti dignissimos
-									fuga!
+									Implemented robust back-end functionalities
+									with Node.js, ensuring authentication, and
+									authorization protocols.
 								</li>
 							</ul>
 						</div>
@@ -42,7 +43,7 @@ const Experience = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Experience;
+export default Experience
